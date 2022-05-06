@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Drinks</title>
+	<meta name="description" content="Simple Starter Description">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/preview.jpg">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<script src="libs/jquery/jquery-3.6.0.min.js" defer></script>
+
+	<script src="js/common.js" defer></script>
+	<script src="js/counterLast.js" defer></script>
+
+</head>
+
+<body>
+	<div class="orders-page _container">
+		<div class="orders-page__container ">
+            <div class="orders-nav">
+                <a href="index.html" class="food-to-home__button"><img src="images/interface/orange<.svg" alt=""></a>
+                <a class="food__title">Orders</a>
+            </div>
+			<a href="food.html" class="order__title">Food</a>
+			<div class="food__order">
+				<script>
+					const info1 = JSON.parse(localStorage.getItem('item'))
+					
+					const divv1 = document.createElement('div')
+					// const input1 = document.createElement('input')
+					const a1 = document.getElementsByClassName('food__order')
+					for(let el of info1){ 
+							divv1.innerHTML= `
+                            <div class="card card-body-top" data-id="${el.id}">
+								<div class = "drink__order__container">
+										<h4 class ='btn btn-danger item__title item__title_02 item__title_03'>${el.title}</h4>
+										<ul class="items1 counter_wrapper">
+											<div onClick="minus()" class="items__control btn minus_count" data-action="minus">-</div>
+											<div class="items__control item_control__counter" data-counter>${el.counter}</div>
+											<div onClick="plus()" class="items__control btn plus_count"data-action="plus">+</div>
+										</ul>
+										<h4 class = 'price__currency price__style' price_width>${el.price}</h4>
+								</div>
+							</div>		`
+
+	
+						if(el.id >950){
+							a1[0].append(divv1.cloneNode(true))
+						}	
+						}	
+	
+				
+				</script>				
+
+			</div>
+			<a href="drinks.html" class="order__title">Drinks</a>
+			<div class="drinks__orders">
+				<script>
+					const info = JSON.parse(localStorage.getItem('item'))
+					console.log(info)
+					
+					const divv = document.createElement('div')
+					const input = document.createElement('input')
+					const a = document.getElementsByClassName('drinks__orders')
+					for(let el of info){ 
+							divv.innerHTML= `
+                            <div class="card card-body-top" data-id="${el.id}">
+								<div class = "drink__order__container">
+									<h4 class ='btn btn-danger item__title item__title_02 item__title_03'>${el.title}</h4>
+									<ul class="items1 counter_wrapper">
+										<div onClick="minus()" class="items__control btn minus_count" data-action="minus">-</div>
+										<div class="items__control item_control__counter" data-counter>${el.counter}</div>
+										<div onClick="plus()" class="items__control btn plus_count" data-action="plus">+</div>
+									</ul>
+									<h4 class = 'price__currency price__style' >${el.price}</h4>
+								</div>	
+							</div>	`
+
+	
+						if(el.id < 950){
+						a[0].append(divv.cloneNode(true))
+						}
+					
+	
+					}
+				</script>
+			</div>
+			<!-- <div class="total_price">
+				<h4 class="t-price__tittle">Total:</h4>
+				<script>
+					const total = JSON.parse(localStorage.getItem('total'))
+					console.log(total)
+					const div_total = document.createElement('div')
+					const a_total = document.getElementsByClassName('total_price')
+
+
+					div_total.innerHTML=`${total}`
+
+					a_total[0].append(div_total.cloneNode(true))
+				</script>
+			</div> -->
+        </div>
+		<div class="home-page-img _ibg">
+			<img src="images/Rectangle 25.jpg" alt="cover">
+		</div>
+	</div>
+
+    <footer class="footer">
+        <div class="footer-nav _container">
+			<a href="index.html" class="food-page__button food-page__button__food"><img src="images/interface/home.svg" alt="home button"></a>
+			<a href="orders.html" class="food-page__button food-page__button__order"><img src="images/interface/order.svg" alt="order button"></a>
+        </div>
+    </footer>
+		 
+	<script>
+        function minus() {
+            let count = +event.target.parentElement.children[1].innerHTML
+            if (count != 0) {
+                count--
+                event.target.parentElement.children[1].innerHTML = count
+            }
+        }
+        function plus(e) {
+            let count = +event.target.parentElement.children[1].innerHTML
+			if (count < 9){
+				count++
+				event.target.parentElement.children[1].innerHTML = count
+				count = 1
+			}  
+        }
+    </script>
+</body>
+</html>

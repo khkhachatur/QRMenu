@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
+
+    <title>Food</title>
+    <meta name="description" content="Simple Starter Description">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="icon" href="images/favicon.png">
+    <meta property="og:image" content="images/preview.jpg">
+
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <script src="libs/jquery/jquery-3.6.0.min.js" defer></script>
+
+    <script src="js/common.js" defer></script>
+    <script src="js/counterLast.js" defer></script>
+
+</head>
+
+<body>
+    <div class="food-page _container">
+        <div class="food-page__container">
+            <div class="food-nav">
+                <a href="index.html" class="food-to-home__button"><img src="images/interface/orange_(2).svg" alt=""></a>
+                <h1 class="food__title">Food</h1>
+            </div>
+        </div>
+        <nav class="food-menu">
+            <ul class="drink-menu__list">
+                <li>
+                    <h4 href="" class="food_menu__link">Soups</h4>
+                    <span class="food-menu__arrow arrow"></span>
+                    <ul class="down_menu__list">
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1000">
+                                <h4 class="item__title">Soup of The Day</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus_food pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">1500</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" class="food_menu__link">Salads</a>
+                    <span class="food-menu__arrow arrow"></span>
+                    <ul class="down_menu__list">
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1050">
+                                <h4 class="item__title">Fattoush</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">2600</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">Lettuce, tomato, cucumber, bell pepper, radish, mint, olive
+                                    oil, lavsh, feta, dressing.</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1051">
+                                <h4 class="item__title">Caesar Salad</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">3000</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">Chicken breast, lettuce, parmesan, tomato, Caesar dressing.
+                                </div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1052">
+                                <h4 class="item__title">Caesar Shrimp Salad</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">4600</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">shrimp, lettuce, parmesan, tomato, Caesar dressing.
+                                </div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1053">
+                                <h4 class="item__title">Cabbage Tuna Salad</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">2600</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">Tuna, Cabbage, onion, corn, dressing</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1054">
+                                <h4 class="item__title">Avocado Salad</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">3000</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">Avocado, lettuce, mangold, rucola, broccoli, quinoa, dressing.</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1055">
+                                <h4 class="item__title">Prosciutto Salad</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">3500</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">Prosciutto, feta, pear, lettuce, mangold, rucola, balsamic dressing.</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1056">
+                                <h4 class="item__title">Steack Salad</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">4600</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">Beef striploin, greens, cucumber, avocado, sesame seeds,
+                                    dressing.</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" class="food_menu__link">Appetizers</a>
+                    <span class="food-menu__arrow arrow"></span>
+                    <ul class="down_menu__list">
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1100">
+                                <h4 class="item__title">Fruit Platter</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">4800</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">Seasonal fruit 5 types.</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1101">
+                                <h4 class="item__title">Cheese Platter</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">3700</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">Parmesan, cheddar, bri, feta, rockford, honey.</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1102">
+                                <h4 class="item__title">Meat Platter</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">5000</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">Prosciutto, pancetta, chorizo, hunter sausage, jalapeno, olives.</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1103">
+                                <h4 class="item__title">Mix Platter</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">8000</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">Parmesan, cheddar, bri, feta, prosciutto, pancetta, chorizo, hunter sausage, honey, jalapeno,
+                                    olives.</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1104">
+                                <h4 class="item__title">Dip Platter</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">3000</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">Strained yogurt, mutabal, hummus.</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1105">
+                                <h4 class="item__title">Chicken Nuggets</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">1800</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">Fried chicken breast, cocktail sauce.</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1106">
+                                <h4 class="item__title">Grilled Vegetables</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">1800</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">pepper, tomato, mushroom, eggplant, broccoli, zucchini, sauce.</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1107">
+                                <h4 class="item__title">Nachos/Beef</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">3500/4500</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">Corn chips, cheese, salsa, guacamole, sour cream, jalapeno.</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1108">
+                                <h4 class="item__title">Fries</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">1000</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" class="food_menu__link">Main Course</a>
+                    <span class="food-menu__arrow arrow"></span>
+                    <ul class="down_menu__list">
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1150">
+                                <h4 class="item__title">Shrimp Pad Thai</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">4200</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">Shrimp, noodles, peanut, pad thai sauce, eggs.</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1151">
+                                <h4 class="item__title">Mussels</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">4300</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">Mussels, rockford sauce.</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1152">
+                                <h4 class="item__title">Sweet & Sour Chicken</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">3200</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">chicken breast, pepper, pineapple, sweet & sour sauce
+                                    Served with Rice.</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1153">
+                                <h4 class="item__title">Chickn Teriyaki</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">3000</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">Rice, chicken, curry teriyaki.</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1157">
+                                <h4 class="item__title">Chickn Curry</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">30500</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">Chicken breast, special curry sauce Served white Rice.</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1154">
+                                <h4 class="item__title">Grilled Chicken</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">2800</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">Grilled chicken breast
+                                    Served with grilled vegetables & special sauce.</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1155">
+                                <h4 class="item__title">Filet Mignon</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">6000</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">beef tenderloin
+                                    Served with grilled vegetables & special sauce.</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1156">
+                                <h4 class="item__title">BBQ Mix</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">5000</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">chicken, beef, pork
+                                    Served with bbq bread, fries & garlic sauce.</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" class="food_menu__link">Sandwiches</a>
+                    <span class="food-menu__arrow arrow"></span>
+                    <ul class="down_menu__list">
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1200">
+                                <h4 class="item__title">Grilled Cheese</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">1800</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">Toasted bread, mozzarella, chedar cheese
+                                    Served with special tomato sauce.</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1201">
+                                <h4 class="item__title">Club Sandwich</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">2700</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">chicken breast, mozzarella, lettuce, cucumber, tomato
+                                    Served with fries.</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1202">
+                                <h4 class="item__title">Chicken Shawarma</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">2500</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">Chicken breast, tomato, pickles
+                                    Served with fries & garlic sauce.</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1203">
+                                <h4 class="item__title">Caesar Wrap</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">2300</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">Chicken breast, Lettuce, tomato, parmesan, Caesar dressing
+                                    Served with fries.</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1204">
+                                <h4 class="item__title">Cheese Burger/Double Cheese Burger</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">3000/4000</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">Beef, chedar cheese, pickles, onion, sauce
+                                    Served with fries.</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1205">
+                                <h4 class="item__title">-Crispy Chicken Burger</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">2800</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">Crispy chicken, cheese, lettuce, pickles, sauce
+                                    Served with fries.</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1206">
+                                <h4 class="item__title">Chicken Quesadilla</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">3200</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">Chicken breast, Bell pepper, mozzarella
+                                    Served with salsa & sour cream.
+                                </div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1207">
+                                <h4 class="item__title">Beef Quesadilla</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"
+                                            data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">4000</div>
+                                </div>
+                            </div>
+                            <div class="card-body-sub">
+                                <div class="ingredients">Beef, mozarella
+                                    Served with salsa & sour cream.</div>
+                                <div class="new-icon"><img src="" alt=""></div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" class="food_menu__link">Sauces & Extras</a>
+                    <span class="food-menu__arrow arrow"></span>
+                    <ul class="down_menu__list">
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1255">
+                                <h4 class="item__title">Shrimp(100 gr.)</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">2300</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1256">
+                                <h4 class="item__title">Cheese Sauce</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">500</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1250">
+                                <h4 class="item__title">Jalapeno</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">300</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1251">
+                                <h4 class="item__title">Ketchup</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">200</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1252">
+                                <h4 class="item__title">Mayonnaise</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">200</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1253">
+                                <h4 class="item__title">Sriracha hot sauce</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">200</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1254">
+                                <h4 class="item__title">Sour Cream</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">200</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>    
+                <li>
+                    <a href="" class="food_menu__link">Desert</a>
+                    <span class="food-menu__arrow arrow"></span>
+                    <ul class="down_menu__list">
+                        <li class="down-menu__item">
+                            <div class="card card-body-top" data-id="1300">
+                                <h4 class="item__title">Desert of The Day</h4>
+                                <div class="details-wrapper">
+                                    <span class="menu_plus pluus" data-action="pluus"></span>
+                                    <ul class="items counter_wrapper">
+                                        <div onClick="minus()" class="items__control btn minus_count"data-action="minus">-</div>
+                                        <div class="items__control btn count_num" data-counter>1</div>
+                                        <div onClick="plus()" class="items__control btn plus_count" data-action="plus">+
+                                        </div>
+                                    </ul>
+                                    <div class="price__currency">1500</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>    
+            </ul>
+        </nav>
+        <div class="home-page-img _ibg">
+            <img src="images/Rectangle 25.jpg" alt="cover">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-nav _container">
+            <a href="index.html" class="food-page__button food-page__button__food"><img src="images/interface/home.svg"
+                    alt="home button"></a>
+            <a href="orders.html" class="food-page__button food-page__button__order"><img
+                    src="images/interface/order.svg" alt="order button"></a>
+        </div>
+    </footer>
+ 	 
+	<script>
+        function minus() {
+            let count = +event.target.parentElement.children[1].innerHTML
+            if (count != 0) {
+                count--
+                event.target.parentElement.children[1].innerHTML = count
+            }
+        }
+        function plus(e) {
+            let count = +event.target.parentElement.children[1].innerHTML
+			if (count < 9){
+				count++
+				event.target.parentElement.children[1].innerHTML = count
+				count = 1
+			}
+        }
+    </script>
+</body>
+
+</html>

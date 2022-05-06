@@ -1,0 +1,629 @@
+/* >>OBNULENIE>>--------------------------------------------------------------------------------------------------------------- */
+/* >>OBNULENIE>>--------------------------------------------------------------------------------------------------------------- */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+ing {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* >>------------------------------------------------------------------------------------------------------------------------------- */
+/* USER VARIABLES SECTION */
+
+._container {
+  max-width: 428px;
+  height: 882px;
+}
+
+.footer {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+/* ._ibg {
+  position: relative;
+}
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+} */
+/* BOOTSTRAP SETTINGS SECTION */
+
+/* gutter 20px (10px + 10px). Comment this code for default gutter start at 1.5rem (24px) wide. */
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  --bs-gutter-x: 0.625rem;
+}
+.row,
+.row > * {
+  --bs-gutter-x: 1.25rem;
+}
+
+/* FONTS LOAD SECTION */
+
+@font-face {
+  src: url("../fonts/playfair-display-v28-latin-500.woff2") format("woff2");
+  font-family: "playfair-af";
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  src: url("../fonts/playfair-display-v28-latin-italic.woff2") format("woff2");
+  font-family: "playfair-it-af";
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  src: url("../fonts/playfair-display-v28-latin-600italic.woff2")
+    format("woff2");
+  font-family: "playfair-it-af";
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  src: url("../fonts/playfair-display-v28-latin-700.woff2") format("woff2");
+  font-family: "playfair-af";
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  src: url("../fonts/poppins-v19-latin-200.woff2") format("woff2");
+  font-family: "poppins-af";
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  src: url("../fonts/poppins-v19-latin-500.woff2") format("woff2");
+  font-family: "poppins-af";
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  src: url("../fonts/poppins-v19-latin-600.woff2") format("woff2");
+  font-family: "poppins-af";
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  src: url("../fonts/poppins-v19-latin-regular.woff2") format("woff2");
+  font-family: "poppins-af";
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* HOME PAGE------------------------------------------------------------------------------------------------------------ */
+.home-page {
+  position: relative;
+}
+.home-page-container {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/Rectangle\ 25.jpg);
+}
+
+.home-page__title {
+  font-family: "playfair-it-af";
+  font-weight: 400;
+  font-style: italic;
+  font-size: 48px;
+  line-height: (48/78 * 100%);
+  letter-spacing: 0.05em;
+  color: #3c6a5a;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-page__text {
+  font-family: "playfair-it-af";
+  font-weight: 500;
+  font-size: 36px;
+  line-height: (36/58 * 100%);
+  letter-spacing: 0.05em;
+  color: #3c6a5a;
+  padding-bottom: 162px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-page__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.home-page__button {
+  font-family: "playfair-af";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: (36/77 * 100%);
+  letter-spacing: 0.035em;
+  color: #3c6a5a;
+  background: rgb(0, 0, 0, 0);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-shadow: 0px 4px 4px rgba(120, 120, 106, 0.25);
+  width: 238px;
+  min-height: 97px;
+  border: 3px solid #3c6a5a;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(120, 120, 106, 0.5));
+  border-radius: 5px;
+}
+.home-page__button:not(:last-child) {
+  margin: 0 0 30px 0;
+}
+
+.home-page-img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  filter: blur(1.5px);
+}
+@media (max-width: 427px) {
+  .home-page-img img {
+    object-position: right;
+  }
+}
+/* HOME PAGE------------------------------------------------------------------------------------------------------------ */
+
+/* FOOD PAGE------------------------------------------------------------------------------------------------------------ */
+/*FOOD NAV*/
+.food-page {
+  position: relative;
+}
+.food-page__container {
+  position: relative;
+  z-index: 2;
+
+  padding: 30px 0 88px 0;
+}
+
+.food-to-home__button {
+  margin-left: 20px;
+  margin-top: -30px;
+}
+.food__title {
+  font-family: "playfair-it-af";
+  font-weight: 600;
+  font-size: 48px;
+  line-height: calc(48 / 77 * 100%);
+  letter-spacing: 0.05em;
+  color: #3c6a5a;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*MENU LIST*/
+.food-menu {
+  position: relative;
+  z-index: 2;
+  overflow: auto;
+  width: 428px;
+  height: 700px;
+  padding-bottom: 35px;
+}
+.food-menu li {
+  position: relative;
+}
+
+.down_menu__list {
+  display: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding-left: 0px;
+  padding-top: 20px;
+}
+.down_menu__list > li {
+  padding-top: 25px;
+}
+.down-menu__item {
+  padding-top: 25px;
+}
+
+.food-menu__list > * {
+  height: 70px;
+}
+.food_menu__link {
+  display: inline-flex;
+  font-family: "playfair-af";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 160%;
+  text-align: justify;
+  letter-spacing: 0.05em;
+  word-spacing: 0.001em;
+  color: #3c6a5a;
+  width: 264px;
+}
+@media (max-width: 380px) {
+  .food_menu__link {
+    width: 220px;
+  }
+}
+
+.arrow {
+  position: absolute;
+  margin: 16px 0 0 0;
+  margin-left: 55px;
+}
+.food_menu__link.open {
+  color: #d67e2d;
+}
+.food-menu__arrow {
+  width: 20px;
+  height: 18px;
+  transform: rotate(90deg);
+  background-image: url(../images/interface/gren>.svg);
+  background-size: contain;
+}
+
+.down_menu__list.open {
+  display: block;
+}
+.arrow.active {
+  background-image: url(../images/interface/orange<.svg);
+}
+
+/*ORDER BODY*/
+
+.menu_plus {
+  width: 24px;
+  height: 24px;
+  margin-top: -4px;
+  background-image: url(../images/interface/plus.svg);
+}
+.menu_plus_food {
+  width: 24px;
+  height: 24px;
+  margin-top: -4px;
+  background-image: url(../images/interface/plus.svg);
+}
+.menu_plus_food.active {
+  width: 30px;
+  height: 28px;
+  background-image: none;
+}
+.bottle__plus {
+  width: 30px;
+  height: 28px;
+  background-image: url(../images/interface/wine-bottle.svg);
+}
+.pluss__padding {
+  padding-left: 54px;
+}
+.menu_plus.active {
+  width: 30px;
+  height: 28px;
+  background-image: url(../images/interface/wine-glass.svg);
+}
+.items > * {
+  display: none;
+}
+.items.open > * {
+  display: inline-flex;
+}
+
+.card-body-top {
+  display: inline-flex;
+}
+.card-body-sub {
+  display: inline-flex;
+}
+.details-wrapper {
+  display: inline-flex;
+}
+.counter_wrapper {
+  display: inline-flex;
+  width: 54px;
+  padding: 0;
+}
+
+.price__currency {
+  font-family: "poppins-af";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: (16/24 * 100%);
+  text-align: right;
+
+  color: #3c6a5a;
+}
+.items__control {
+  font-family: "poppins-af";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #3c6a5a;
+  cursor: pointer;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.ingredients {
+  font-family: "poppins-af";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 100%;
+
+  width: 289px;
+  height: 36px;
+
+  color: #3c6a5a;
+}
+
+.item__title {
+  font-family: "poppins-af";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: (16/24 * 1005);
+  color: #3c6a5a;
+  margin-right: 30px;
+
+  width: 179px;
+}
+@media (max-width: 375px) {
+  .item__title {
+    width: 150px;
+  }
+}
+.down-menu__item {
+  /*BORDER!!!!!!!!!!!!*/
+  width: 354px;
+  padding: 5px 5px 5px 5px;
+  border-bottom: 1px solid rgba(240, 242, 240, 0.6);
+}
+/* FOOD PAGE------------------------------------------------------------------------------------------------------------ */
+
+/* DRINKS PAGE------------------------------------------------------------------------------------------------------------ */
+
+.drinks-page {
+  position: relative;
+}
+.drinks-page__container {
+  position: relative;
+  z-index: 2;
+  overflow: auto;
+  width: 428px;
+  height: 820px;
+  padding-bottom: 35px;
+}
+.drinks-nav {
+  padding-top: 30px;
+  padding-bottom: 65px;
+}
+.drink-menu__list > li {
+  padding-top: 25px;
+}
+/* DRINKS PAGE------------------------------------------------------------------------------------------------------------ */
+
+/* ORDERS PAGE------------------------------------------------------------------------------------------------------------ */
+.orders-page {
+  position: relative;
+}
+.orders-page__container {
+  width: 100%;
+}
+
+.orders-nav {
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+/* DRINKS BLOCK */
+
+.item_control__counter {
+  padding: 0 10px 0 10px;
+}
+
+.drink__order__container {
+  display: inline-flex;
+}
+.drink__order__container > * {
+  padding-top: 12px;
+}
+
+.item__title_02 {
+  font-family: "poppins-af";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: (12/18 * 100%);
+  color: #3c6a5a;
+}
+.item__title_03 {
+  width: 215px;
+  padding-right: 10px;
+}
+@media (max-width: 380px) {
+  .item__title_03 {
+    width: 190px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 350px) {
+  .item__title_03 {
+    width: 170px;
+    padding-right: 10px;
+  }
+}
+.counter_width {
+  width: 52px;
+}
+.price_width {
+  padding-left: 29px;
+}
+.order__title {
+  font-family: "playfair-af";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: (18/26 * 100%);
+  letter-spacing: 0.05em;
+  color: #3c6a5a;
+  padding-bottom: 25px;
+  display: inline-flex;
+}
+
+.price__style {
+  font-family: "poppins-af";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: (12/18 * 100%);
+  color: #3c6a5a;
+  padding-left: 29px;
+}
+
+/* FOOD BLOCK */
+.orders-page {
+  position: relative;
+}
+.orders-page__container {
+  position: relative;
+  z-index: 2;
+  overflow: auto;
+  width: 100%;
+  height: 820px;
+  padding-bottom: 35px;
+}
+.food__order {
+  padding-left: 15px;
+  padding-bottom: 55px;
+}
+.drinks__orders {
+  padding-left: 15px;
+}
+
+/* TOTAL PRICE */
+.total_price {
+  padding-top: 50px;
+  display: inline-flex;
+  padding-left: 210px;
+
+  font-family: "poppins-af";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: (18/29 * 100%);
+  letter-spacing: 0.05em;
+
+  color: #3c6a5a;
+}
+
+.t-price__tittle {
+  margin-top: -2px;
+  padding-right: 7px;
+}
+
+/* ORDERS PAGE------------------------------------------------------------------------------------------------------------ */
+
+/* FOOTER--------------------------------------------------------------------------------------------------------------- */
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  height: 72px;
+  padding: 12px 100px 0 100px;
+}
+
+.food-page__button__order {
+  padding-left: 132px;
+}
+/* FOOTER--------------------------------------------------------------------------------------------------------------- */
